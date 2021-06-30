@@ -7,6 +7,7 @@ export const Nav = styled.nav`
   align-items: center;
   justify-content: space-between;
   padding: 0 2%;
+  overflow-x: hidden;
 
   .logo {
     width: 80px;
@@ -61,11 +62,32 @@ export const Nav = styled.nav`
   }
 
   .profile {
+    cursor: pointer;
     img {
       height: 50px;
       width: 50px;
       object-fit: cover;
       border-radius: 50%;
     }
+  }
+`;
+
+export const Login = styled.button`
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #f9f9f9;
+  border: 2px solid #f9f9f9;
+  border-radius: 4px;
+  padding: 0.4rem 1.5rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  transition: all 250ms ease;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #f9f9f9;
+    color: #000;
+    border-color: transparent;
   }
 `;
